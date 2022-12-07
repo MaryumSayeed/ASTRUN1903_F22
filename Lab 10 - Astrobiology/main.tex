@@ -1,0 +1,244 @@
+\documentclass[10pt]{article}% uses letterpaper by default
+
+%---------- Uncomment one of them ------------------------------
+\usepackage[includeheadfoot, top=1in, bottom=1in, hmargin=1in]{geometry}
+
+% \usepackage[a5paper, landscape, twocolumn, twoside,
+%    left=2cm, hmarginratio=2:1, includemp, marginparwidth=43pt, 
+%    bottom=1cm, foot=.7cm, includefoot, textheight=11cm, heightrounded,
+%    columnsep=1cm, dvips,  verbose]{geometry}
+%---------------------------------------------------------------
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{graphicx}
+\usepackage{setspace}
+%\doublespacing
+\singlespacing
+\newcommand{\labnumber}{10}  % UPDATE THIS!
+
+%\onehalfspacing
+%\newcommand{\exercisename}{}
+
+\usepackage{datetime2}  % customize \today, defaults to yyyy-mm-dd
+\lhead{ASTR UN1903 -- Lab \labnumber}
+\lfoot{M. Sayeed}
+\cfoot{\thepage}
+\rfoot{\today}
+\rhead{Mondays 6-9 pm}
+\renewcommand{\rightmark}{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand{\s}[0]{\phantom{i}} %sets up \s command
+\newcommand{\m}[0]{\phantom{abcde}} %sets up \m command
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}} %sets up \e command
+\setlength{\parindent}{0.2in} %new paragraph indent
+\usepackage{indentfirst} % indent the first paragraph of a section
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+%\noindent 
+\textit{``Yll?'' she called quietly. ``Do you ever wonder if -- well, if there \emph{are} people living on the third planet?''}
+
+\textit{``The third planet is incapable of supporting life,'' stated the husband patiently. ``Our scientists have said there's far too much oxygen in their atmosphere.''} 
+\begin{center}
+-- Ray Bradbury, \textit{The Martian Chronicles}
+\end{center} 
+
+
+\section{Introduction}
+
+This week we will be talking about \textit{monsters}, \textit{aliens}, \textit{demons}, \textit{pirates}, and \textit{campaign surrogates}. But mainly, we will be talking about astrobiology, the study of life outside of Earth.   While this may sound like the stuff of science fiction, we'll try to use actual science (and some simple math) to explore the possibility of extraterrestrial life. While physical experiments are crucial for scientific progress, these kinds of thought experiments often make vital tools in advancing our understanding of nature.  Most of these questions do not have one correct answer so it is important to validate and explain your thinking. The explanation you provide with your answer is more important than the answer itself. 
+
+\begin{enumerate}
+    \item Before you begin the lab, write down a guess for when (or even if?) we will find life elsewhere. 
+\end{enumerate}
+
+
+\section{What is Life?}
+Talk to your partner about these questions and write down your thoughts. 
+
+\begin{enumerate}
+
+\item How would/could/should you define life?  
+How can you distinguish living things from non-living things?
+
+\item  What is intelligent life?  
+How can you distinguish intelligent life from non-intelligent life?  
+Give an example of an intelligent life-form and a non-intelligent life-form. 
+%What would we need from alien civilizations for us to detect their existence or to communicate with them?
+
+\item  What does life need to survive?  
+Think about the basic necessities of humans and other living things.
+
+\item What are some of the ways in which a species can become extinct?  Name at least three of those ways.  
+
+\item Are some of these fates preventable by sufficiently ``advanced'' civilizations?  Are some fates unique to them?  
+Make an educated guess for a typical lifetime of an intelligent civilization based on the following table and explain why.
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+    Age of the universe & $\sim$ 13,700,000,000 years \\ \hline
+    Age of the Earth & 4,600,000,000 years \\ \hline
+    Earliest fossil evidence of fossil bacteria & 3,500,000,000 years ago \\ \hline
+    First multicellular fossils & 1,500,000,000 years ago \\ \hline
+    Earliest invertebrates & 800,000,000 years ago \\ \hline
+    Fish+amphibian domination & 590,000,000 - 248,000,000 years ago \\ \hline
+    Mammals dominant & since 65,000,000 years ago \\ \hline
+    Homo sapiens & originated 250,000 years ago \\ \hline
+    Human civilization & $\sim$ 10,000 years old \\ \hline
+    Radio communication & $\lesssim$ 100 years old \\ \hline
+\end{tabular}
+\end{center}
+
+\end{enumerate}
+
+
+\section{The Habitable Zone}
+
+The habitable zone is the distance from a star at which liquid water can exist on a planet orbiting that star.  
+It is called the habitable zone because we assume that (most) life requires liquid water to survive.
+
+\begin{enumerate}
+
+\item Between what temperatures, in degrees Celsius and on the Kelvin scale, is water liquid?  
+Recall that the temperature in Kelvin is the temperature in Celsius degrees plus 273.
+
+\item Below is an equation which relates the distance between a planet and its star, $d$, and the average surface temperature on the planet, $T$. 
+Note that it also depends on the luminosity $L_{\odot}$, or energy output, of the star since that is where planets get their heat.
+$$ T = \left( \frac{L_{\odot}}{4 \pi \sigma d^{2}} \right) ^{1/4} $$
+Use the equation to find the minimum and maximum distance from the Sun at which water will be liquid.  
+Note: L$_{\odot}$ = $3.8 \e{33}$ ergs/second, $\sigma$ = $5.7 \e{-5}$ erg/s/cm$^{2}$/K$^{4}$.  
+$T$ must be in Kelvin.  
+The distance you calculate with this equation will be in cm.  
+
+% d = 8.2 x 10^12 cm and 1.6 x 10^13 cm
+
+\item The current distance between the Earth and the Sun is $1.5 \e{11}$ m (1 AU).  
+Calculate what the average surface temperature of the Earth should be based on that distance.
+
+% T = 277 K
+
+\item The actual average temperature at the surface of the Earth is 15$^{\circ}$ C.  
+How do your results compare to the actual value?  
+If they are different, explain why that might be.
+
+% T = 15 C = 288 K (it's hotter than it should be - global warming, greenhouse effect)
+
+\end{enumerate}
+
+
+%\section{Conditions for Life}
+%4. What is the \emph{habitability zone}?  Why is it so important?  Look at an earlier lab we did, if necessary.   Are there ways to cheat this \emph{habitability zone}, i.e. can a planet be very far or close to a star and still have water?  \emph{Hint: think about our discussion last week.}
+%\\
+%\\
+%5.  Name the major chemical elements that constitute life as we know it on earth.  Do you know where they come from?
+%\\
+%\\
+%7.  Our understanding of life is somewhat (severely?) limited in that we only know of one instance of evolved life, one common ancestor on one planet, etc.  Might life exist in conditions very different from what we discussed above?\\
+
+%9.  The human population on Earth doubles every 30-40 years.  Taking the population of the Earth to be 6.7 billion people at present day, and assuming a steady growth rate, estimate a rough value for the population in the year 2109.  In the year 2209?  Comment on the possibility of inhabiting Mars (or some of the Jovian moons) in solving the overpopulation problem.  The nearest star to the Sun is Proxima Centauri, 4.2 light years away.  Comment on the feasibility of colonization of other stars in solving the overpopulation problem.\\
+%
+%\emph{Hint:  Use the following equation that governs exponential growth of a population:  A = $A_o$ $\times$ B$^{t/T}$; $A_o$ is the original value of the quantity A, B is the growth rate of quantity A, T is the time during which A increases by the growth rate B, and A gives the value of the quantity after an amount of time t.} 
+
+
+\section{The Search for Life on Other Planets}
+The SETI (Search for Extraterrestrial Intelligence) Institute is constantly monitoring stars in our galaxy for signals from intelligent life on other planets.  
+It is thought that the signals would be in the form of radio waves.  
+Radio waves are a type of electromagnetic radiation, as is all other light.  
+All electromagnetic radiation travels at the speed of light, $c=3.0 \e{8}$ m/s. 
+
+A light-year is a unit of distance: rather unsurprisingly, it is the distance light travels in one year.  
+Besides the sun, the closest star to us (Alpha Centauri) is 4.3 light years away.  
+The radius of our galaxy is 51,000 light-years.  
+
+\begin{enumerate}
+
+\item How long would it take for a signal from Alpha Centauri to reach us?  
+How long would it take for a signal from 51,000 light-years away to reach us?  %(Hint: No calculation needed.)%  To convince yourself: 1 light-year = 9.461 $\times$ 10$^{15}$ m.  Distance = velocity $\times$ time.)
+
+\item  If we learn tomorrow that SETI has detected signals from a star-planet system 51,000 light-years away, do you think the civilization responsible for the signal is more or less advanced than ours?  Why? %  (Hint: Human civilization has existed for about 10,000 years and has had radio technology for less than 100 years.)
+
+\item Speculate on the feasibility of having a ``conversation'' with an alien civilization. 
+
+\end{enumerate}
+
+
+\section{Drake's Equation}
+Astronomer Frank Drake created the following equation to determine the number of intelligent civilizations that are willing and able to communicate:
+$$ N = R_{*} \times f_{p} \times n_{e} \times f_{L} \times f_{I} \times f_{C} \times L. $$
+%\begin{flushleft}
+$R_{*}$ is the rate of star formation in our galaxy.
+\\
+$f_{p}$ is the fraction of stars that have planets.
+\\
+$n_{e}$ is the average number of habitable planets for every star that has planets.
+\\
+$f_{L}$ is the fraction of habitable planets that actually develop life.
+\\
+$f_{I}$ is the fraction of the above with intelligent life.
+\\
+$f_{C}$ is the fraction of the above that develop technology that releases detectable signs of their existence into space.
+\\
+$L$ is the expected lifetime of such a civilization.
+
+\begin{enumerate}
+
+\item  What does \emph{N} represent?  
+Show that it has proper units by writing the equation out explicitly with the units of all the variables.
+
+\item  $R_{*}$ is about 10 stars per year.  
+Make educated guesses for the values of the other parameters.  \emph{Explain your reasoning in each case.}
+
+\item  What do you get for $N$?  How does it compare to the observed value of $N$?
+
+\item In what ways is Drake's equation useful?  
+In what ways it is not useful?  Is it scientific?  
+What might be missing from Drake's equation?  
+Your answer should refer back to other sections in today's lab.
+
+\end{enumerate}
+
+
+\section{Conclusions}
+
+\begin{enumerate}
+
+\item Think back to the Earth-Moon-Sun lab. How do the Earth's seasons affect its habitability? What about its eccentricity? What would life on a comet (very eccentric orbit) be like? 
+
+\item Extremophiles are organisms on Earth that live in extreme conditions such as the depths of the ocean where no light can penetrate or extremely cold climates.  
+What does their existence on earth suggest about life on other planets? Comment on this in light of the quote at the beginning of the lab.
+
+\item The Mars Reconnaissance Orbiter confirmed that liquid water currently flows on the surface of Mars. 
+What does this tell us about the possibility of life on Mars?   
+
+\item Europa is one of Jupiter's moons.  
+The interior of Europa is rocky, like the Earth.  
+Beyond this rocky interior is an outer layer of water that is about 100 km thick.  
+The water layer is composed of an icy crust, underneath which is presumably a liquid ocean.  
+What does this tell us about the possibility of life on Europa?  
+
+\item As the Sun ages and becomes a red giant star, it will expand outward, eventually going all the way to Mars (enveloping Earth!).  
+Let's think about what happens before then.  
+How will the surface temperature of Earth change when the distance between the Earth and the Sun is half of what it is now? Be quantitative.
+
+\item Most stars in the galaxy are less massive than the Sun, meaning they are smaller and do not output as much energy. 
+Based on this fact, would you expect planets that harbor life to be closer to or further from their host star than the Earth is to the Sun.
+
+\item Finally, look back at your prediction from the introduction. Do you still think that? Why or why not?
+
+\item If the lab was perfectly clear to you, what did you like or dislike? 
+If not, what confused you? Any other feedback?
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
